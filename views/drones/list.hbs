@@ -8,7 +8,7 @@
         <h3>{{this.name}}</h3>
         <span>This drone has <strong>{{this.propellers}}</strong> propellers.</span>
         <span>It's max speed is <strong>{{this.maxSpeed}}</strong>.</span>
-        {{!-- <a href="/heroes/delete/{{_id}}">delete</a> --}}
+        <a class="link-update" href="/drones/{{_id}}/update">Update</a>
         <form method="post" action="/drones/{{_id}}/delete">
             <button id="btn-delete">Delete</button>
         </form>
